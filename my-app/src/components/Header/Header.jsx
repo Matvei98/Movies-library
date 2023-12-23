@@ -40,8 +40,9 @@ export const Header = () => {
           <Link to="/"><TheatersRoundedIcon/></Link>
         </div>
         <div className="search-bar">
+         
           <form onSubmit={submitHandler}>
-		{isLoading &&  <CircularColor/>} 
+            {isLoading &&  <CircularColor/>}
            <input
               type="text"
               value={term}
